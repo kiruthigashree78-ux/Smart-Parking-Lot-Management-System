@@ -2,12 +2,13 @@
 An object-oriented Java application designed to automate vehicle entry/exit tracking, dynamic slot allocation, and fee calculation using custom domain models and Java Collection frameworks.
 
 ## Sample Output
-
+```
 Free spots: 4
 1. Park a vehicle
 2. Exit a vehicle
 3. Exit program
 Enter choice:
+'''
 1
 Enter your name:
 kiara
@@ -39,3 +40,4 @@ Free spots: 4
 2. Exit a vehicle
 3. Exit program
 Enter choice:
+```
