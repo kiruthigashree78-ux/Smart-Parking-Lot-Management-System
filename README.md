@@ -1,6 +1,16 @@
 # Smart-Parking-Lot-Management-System
 An object-oriented Java application designed to automate vehicle entry/exit tracking, dynamic slot allocation, and fee calculation using custom domain models and Java Collection frameworks.
+## Features
 
+- Parking spots for three vehicle types: Bike, Car, Van
+- Allocates the first free spot that matches the vehicle's type
+- Records the owner name, license plate and vehicle type
+- Validates the license plate format (for example `TN-45-3455`) and the vehicle type
+- Rejects a license plate that is already parked
+- Issues a ticket and stores it in a `HashMap` keyed by license plate
+- Fee based on parking time, rounded up to the next full hour (minimum 1 hour), with a different hourly rate per vehicle type
+- Prints a receipt on exit: owner, vehicle, spot, entry time, exit time, hours billed, fee
+- Shows the number of free spots in the menu
 ## Sample Output
 ```
 Free spots: 4
