@@ -21,6 +21,8 @@ An object-oriented Java application designed to automate vehicle entry/exit trac
 | `ParkingLot` | Holds the list of spots and the ticket map; handles park, exit and the free-spot count |
 | `ParkingTicket` | Stores the vehicle, spot id and entry time; calculates the fee and records exit time, hours billed and fee |
 | `Main` | Menu that runs the program |
+## How to Run
+Compile and run the Java files in the `parking_vehicle` folder. Start from `Main.java`.
 ## Sample Output
 ```
 Free spots: 4
@@ -61,3 +63,18 @@ Free spots: 4
 3. Exit program
 Enter choice:
 ```
+## Known Limitations
+
+- Data is stored in memory only, so it is lost when the program stops
+- Single floor and a single entry gate
+- The number of spots is fixed in `Main` when the program starts
+- Hourly rates are written inside `calculateFee`, not configurable
+- Console interface only, and there are no automated tests yet
+
+## Future Improvements
+
+- Move the hourly rates into the `Vehicle_type` enum
+- Add more vehicle types
+- Store data in a database using JDBC
+- Build a REST API with Spring Boot and a simple web page
+- Add unit tests with JUnit
