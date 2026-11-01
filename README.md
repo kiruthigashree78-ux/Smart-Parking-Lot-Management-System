@@ -11,6 +11,16 @@ An object-oriented Java application designed to automate vehicle entry/exit trac
 - Fee based on parking time, rounded up to the next full hour (minimum 1 hour), with a different hourly rate per vehicle type
 - Prints a receipt on exit: owner, vehicle, spot, entry time, exit time, hours billed, fee
 - Shows the number of free spots in the menu
+- ## Project Structure
+
+| Class | Role |
+|---|---|
+| `Vehicle_type` | Enum of allowed vehicle kinds: BIKE, CAR, VAN |
+| `Vehicle` | A vehicle with a license plate, a type and an owner name |
+| `ParkingSpot` | One parking space: its id, type, and whether it is free or occupied |
+| `ParkingLot` | Holds the list of spots and the ticket map; handles park, exit and the free-spot count |
+| `ParkingTicket` | Stores the vehicle, spot id and entry time; calculates the fee and records exit time, hours billed and fee |
+| `Main` | Menu that runs the program |
 ## Sample Output
 ```
 Free spots: 4
